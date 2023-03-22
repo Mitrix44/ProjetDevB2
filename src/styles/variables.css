@@ -1,4 +1,6 @@
 :root {
     --primary-color: darkcyan;
     --secondary-color: #f0f0f0;
+    --header-height: 159px;
+    --footer-height: 141px;
 }

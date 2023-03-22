@@ -1,14 +1,11 @@
 .footer{
-    position: fixed;
-    width:100%;
-    left: 0;
-    bottom: 0;
     display:flex;
     justify-content:space-around;
     background-color:var(--primary-color);
     align-items: center;
-    vertical-align:bottom;
+    margin-top:30px;
     padding: 1em 0;
+
 }
 .footer .dePlus h3 {
     color: var(--secondary-color);
