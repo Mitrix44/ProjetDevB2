@@ -1,0 +1,30 @@
+.footer{
+    position: fixed;
+    width:100%;
+    left: 0;
+    bottom: 0;
+    display:flex;
+    justify-content:space-around;
+    background-color:var(--primary-color);
+    align-items: center;
+    vertical-align:bottom;
+    padding: 1em 0;
+}
+.footer .dePlus h3 {
+    color: var(--secondary-color);
+}
+.footer .dePlus nav a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.footer .menu nav {
+    height: 100%;    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer .menu nav a {
+    padding:5px 0px;
+    color: var(--secondary-color);
+    text-decoration: none;
+}

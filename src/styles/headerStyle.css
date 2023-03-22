@@ -1,0 +1,22 @@
+.header{
+    display:flex;
+    justify-content:space-between;
+    background-color:var(--primary-color);
+    padding:5px;
+    align-items: center;
+}
+.header .logo {
+    vertical-align:middle;
+}
+.header .menu nav {
+    height:100%;
+}
+.header .menu nav a {
+    padding: 0px 15px;
+    font-size: x-large;
+    color: var(--secondary-color);
+    text-decoration:none;
+}
+.header .rs img{
+    margin: 0px 5px;
+}
