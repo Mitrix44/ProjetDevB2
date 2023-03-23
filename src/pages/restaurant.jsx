@@ -1,6 +1,28 @@
+import axios from 'axios'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import RestaurantPres from '../components/restaurantPres'
+
 function Restaurant () {
-  return (
-    <h1>Mon Restaurant</h1>
+  const { id } = useParams()
+  const [restaurant, setRestaurant] = useState()
+
+  useEffect(() => {
+    const loadData = async () => {
+      const response = await axios.get(`http://localhost:1337/api/restaurants/${id}?populate=*`)
+      if (response.status === 200) {
+        const data = response.data.data
+        setRestaurant(data)
+      }
+    }
+    loadData()
+  })
+
+  return restaurant && (
+    <>
+      <RestaurantPres restaurant={restaurant.attributes} />
+      <pre>{JSON.stringify(restaurant, null, 2)}</pre>
+    </>
   )
 }
 

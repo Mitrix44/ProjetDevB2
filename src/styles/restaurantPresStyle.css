@@ -1,0 +1,8 @@
+.restaurantPres{
+  width: 100%;
+}
+.restaurantPres .presentation{
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
